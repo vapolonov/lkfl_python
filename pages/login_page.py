@@ -9,7 +9,7 @@ class LoginPage:
 
     @allure.step('Открыть страницу входа в личный кабинет')
     def open(self):
-        browser.open('/')
+        browser.open('/lkfl')
         browser.element('.flex-shrink-0').should(have.text('Личный кабинет\nналогоплательщика'))
         return self
 
